@@ -15,6 +15,8 @@ KDE plasma's hardware monitor shows the incorrect CPU usage, so I'm displaying t
 	  - Window types: All selected
   - Click `Add Property...`
   	- Layer, Force, Notification
+  - Click `Add Property...`
+  	- Virtual Desktops, Force, All desktops
   - Click `Apply`
 4. Set conky to run on start at `System Settings > System > Autostart`
   - You can also launch it via the command line with `conky` if you don't want to reboot
