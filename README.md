@@ -25,6 +25,7 @@ KDE plasma's hardware monitor shows the incorrect CPU usage, so I'm displaying t
 7. Double check the indices passed to `hwmon` in `render.lua`, these may be hardware dependent. See the comment there for more info.
 
 # To Do
+- Figure out why multiple instances are launched sometimes (maybe after nixos rebuild?)
 - Show CPU speed so you can tell when you're getting throttled
 - Fan speeds
 - Network stats
