@@ -54,10 +54,10 @@ function conky_render()
 
     local padding_top = 4
     local padding_bottom = 6
-    local bar_width = 4
+    local bar_width = 6
     local y = conky_window.height
     local x = bar_width / 2
-    local font_size = 12
+    local font_size = 18
 
     -- CPU usage
     cairo_set_line_width (cr, bar_width)
@@ -79,7 +79,7 @@ function conky_render()
         cairo_move_to(cr, x, min_y)
         cairo_line_to (cr, x, end_y)
         cairo_stroke (cr)
-        x = x + 5
+        x = x + bar_width + 2
     end
     x = x + 40
 
@@ -99,7 +99,7 @@ function conky_render()
         "SSD: %.0f%%",
         conky_parse('$fs_used_perc'))
     )
-    x = x + 80
+    x = x + 100
 
     -- CPU & GPU temperatures (may be hardware dependent, see `/sys/class/hwmon`)
     cairo_move_to(cr, x, padding_top + font_size)
